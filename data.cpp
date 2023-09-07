@@ -1,7 +1,7 @@
 #include <assert.h>
 #include <stdio.h>
 
-#include "get_element.h"
+#include "functions_element.h"
 
 int main()
 {
@@ -30,6 +30,8 @@ int main()
         {
             verification = scanf ("%d %d %d", &first_team, &second_team, &goals);
         }
+
+        checking_order (first_team, second_team);
 
         getchar();
 

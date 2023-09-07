@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "get_element.h"
+#include "functions_element.h"
 
 // void print_element_rectangular (char* data, size_t row, size_t cols)
 // {
@@ -129,5 +129,15 @@ void s_validation (int *first_team, int *second_team)
 
         verification = scanf ("%d %d", first_team, second_team);
 
+    }
+}
+
+void checking_order (int& first_team, int& second_team)
+{
+    if (second_team > first_team)
+    {
+        int replacement = first_team;
+        first_team = second_team;
+        second_team = first_team;
     }
 }
